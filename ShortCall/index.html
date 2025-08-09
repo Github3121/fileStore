@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <title>Short Call</title>
+  <link rel="icon" type="image/png" href="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/529678594_674324462326326_2200491210488153313_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_eui2=AeHlAA98tHjRyg1OVsBbgh29WlChUQHkDUpaUKFRAeQNSqt3A_HDD7lX5jaVUCpHgUSwEqwPxNNArAf8WgZS2lda&_nc_ohc=tvrXwbrZJTwQ7kNvwFe6-Lu&_nc_oc=AdkC557vY_zRFl18mUxe7Y0VqWqTgy80RMGSTHtZgaItsIGdlRGvBFLccgU8E5GV5wk&_nc_zt=23&_nc_ht=scontent.fdac138-1.fna&_nc_gid=h3iV2tozxvjKwCUBq7slIQ&oh=00_AfWZCDGtg21L0pi8Soe7OlVCUerJqOPSwVRKYSJU20_EbQ&oe=689A4E54">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="ter1" class="container" style="display: none; border: 2px solid; border-color: gray" >
+    <h1>Login</h1><br>
+    <input placeholder="Secret Password" type="password" id="pass">
+    <div class="button-container">
+    <button id="log" onclick="login()">Login</button>
+    </div>
+    <p id="result"></p>
+  </div>
+  <div id="ter2" class="container" style="border: 2px solid; border-color: gray">
+    <h1>ShortCut Caller</h1><br>
+    <input maxlength="11" placeholder="Enter 11 Digits" pattern="numberic" type="number" id="num">
+    <div class="button-container">
+    <button id="but" onclick="whatsapp()">Whatsapp</button>
+    <button id="tel" onclick="telephone()">Telephone</button>
+    <button id="find" onclick="find()">Find</button>
+    <button id="paste" style="background-color: rgb(100, 0, 100)" onclick="pasteText()">Paste</button>
+    <button onclick="history()" style="background: rgb(50, 200, 100)" class="hst">History</button>
+    <button id="clear" onclick="resetInput()" style="background: rgb(255, 0, 0)" class="hst">Clear</button>
+    </div>
+    <div id="lp"><ul id="historyList" style="display: none; cursor: pointer; list-style-type: none; padding: 0; margin: 0; justify-content: center; display: flex; flex-direction: column;"></ul></div>
+  <a href="https://zkepe6.mimo.run/" class="href">Number Convert</a>
+  </div>
+  <div id="popupWindow" style="display: none;"></div>
+  <script src="script.js">
+  </script>
+</body>
+</html>
