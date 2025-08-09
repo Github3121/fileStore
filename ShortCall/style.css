@@ -141,9 +141,6 @@
       background-color: #4338ca;
       transform: translateY(-2px);
     }
-
-
-    
     @keyframes slideIn {
       from {
         transform: translateY(-50px);
